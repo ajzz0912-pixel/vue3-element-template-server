@@ -1,0 +1,27 @@
+{
+  "name": "vue3-element-template-server",
+  "version": "1.0.0",
+  "description": "Backend service",
+  "main": "server.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development dotenv -e .env -- nodemon server.js",
+    "start": "cross-env NODE_ENV=production dotenv -e .env -- node server.js",
+    "test": "cross-env NODE_ENV=test dotenv -e .env -- node server.js"
+  },
+  "dependencies": {
+    "@koa/router": "^15.7.0",
+    "cors": "^2.8.5",
+    "koa": "^3.2.1",
+    "koa-bodyparser": "^4.4.1",
+    "koa2-cors": "^2.0.6",
+    "log4js": "^6.9.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.23.0",
+    "sequelize": "^6.37.8"
+  },
+  "devDependencies": {
+    "cross-env": "^10.1.0",
+    "dotenv-cli": "^7.1.0",
+    "nodemon": "^3.1.0"
+  }
+}
